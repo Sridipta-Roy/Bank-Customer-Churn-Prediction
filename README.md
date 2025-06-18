@@ -83,50 +83,7 @@ graph TD;
     C --> D[Train-Validation Split];
     D --> E[Model Training & Tuning];
     E --> F[Model Evaluation];
-    F --> G[Kaggle Submission];
-```
-
----
-
-## 🔮 Future Work
-
-- Explore **ADASYN** and **RandomUnderSampling** for class balancing
-- Advanced feature engineering to discover interaction terms
-- Implement hybrid ensemble approaches (stacking/blending)
-- Segment-based modeling (predict separately for customer clusters)
-
----
-
-## 📂 Repository Structure
-
-```
-📦Bank-Customer-Churn
- ┣ 📁data
- ┃ ┣ train.csv
- ┃ ┣ test.csv
- ┣ 📁notebooks
- ┃ ┣ eda.ipynb
- ┃ ┣ model_training.ipynb
- ┣ 📁models
- ┃ ┣ catboost_model.pkl
- ┣ 📄README.md
- ┣ 📄requirements.txt
- ┣ 📄churn_predictor.py
- ┣ 📄LICENSE
-```
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-```bash
-pip install -r requirements.txt
-```
-
-### Run Model
-```bash
-python churn_predictor.py --input data/test.csv --model models/catboost_model.pkl
+    F --> G[Prediction on unseen data];
 ```
 
 ---
